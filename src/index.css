@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply bg-cover bg-center h-screen w-full object-cover;
+  background-image: url('src/assets/background.jpg');
+}
