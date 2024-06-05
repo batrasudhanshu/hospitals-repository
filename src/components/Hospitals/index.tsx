@@ -44,7 +44,7 @@ const [hospitalsData, setHospitalsData] = useState(data)
 </form>
 
       <div className="flex flex-wrap justify-center gap-5">
-              {searchVal?.length? hospitalsData?.filter((item: any) => item.name.toLowerCase().includes(searchVal.toLowerCase()))?.map((item:any,index:number) => <ServicesCard index={index} key={item.id} heading={item.name}  image='doctor.svg'/>):hospitalsData?.map((item:any,index:number) => <ServicesCard index={index} key={item.id} heading={item.name}  image='doctor.svg'/>)}
+              {searchVal?.length? hospitalsData?.filter((item: any) => item.name.toLowerCase().includes(searchVal.toLowerCase()))?.map((item:any,index:number) => <ServicesCard index={index} key={item.id} heading={item.name}  image='doctor.png'/>):hospitalsData?.map((item:any,index:number) => <ServicesCard index={index} key={item.id} heading={item.name}  image='doctor.png'/>)}
             </div>
             </>
   );
