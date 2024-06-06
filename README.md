@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# Hospital Finder App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The Hospital Finder App is a web application that helps users locate hospitals using a public API. The application is built with React and TypeScript, powered by Vite for fast builds and optimized development. For styling, Tailwind CSS is used to ensure a modern and responsive design. Additionally, animations are added to the title for enhanced user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A superset of JavaScript that adds static types.
+- **Vite**: A fast build tool and development server.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **Public API**: Utilized for fetching hospital data.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Search for Hospitals**: Users can search for hospitals based on various criteria.
+- **Responsive Design**: The app is fully responsive, ensuring a great experience on both mobile and desktop devices.
+- **Animated Title**: The title of the application includes animations for a dynamic appearance.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Getting Started
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Prerequisites
+
+- Node.js (version 14 or above)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/batrasudhanshu/hospitals-repository.git
+    cd hospitals-repository
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3. Start the development server:
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+### Building for Production
+
+To create a production build of the application:
+
+```bash
+npm run build
+# or
+yarn build
