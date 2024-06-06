@@ -5,7 +5,7 @@ interface CardProps {
   index: number;
 }
 
-const ServicesCard: React.FC<CardProps> = ({ heading, image, index }) => {
+const HospitalCard: React.FC<CardProps> = ({ heading, image, index }) => {
   return (
     <div
       className={`${
@@ -26,4 +26,4 @@ const ServicesCard: React.FC<CardProps> = ({ heading, image, index }) => {
   );
 };
 
-export default ServicesCard;
+export default HospitalCard;

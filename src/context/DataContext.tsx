@@ -6,6 +6,7 @@ interface ApiData {
   error: string | null;
   setData: (prevState: ApiData) => void;
 }
+const BASE_URL='https://myhospitalsapi.aihw.gov.au/api/v0/retired-myhospitals-api/hospitals'
 
 const initialState: ApiData = {
   data: null,
@@ -22,11 +23,12 @@ export const FetchDataContext = createContext<() => Promise<void>>(() => {
 
 export const DataProvider = ({ children }: { children: React.ReactNode }) => {
   const [data, setData] = useState<ApiData>(initialState);
+  
   const fetchData = async () => {
     setData((prevState) => ({ ...prevState, loading: true }));
     try {
       const response = await fetch(
-        `https://myhospitalsapi.aihw.gov.au/api/v0/retired-myhospitals-api/hospitals?state=NSW`
+        `${BASE_URL}?state=NSW`
       );
       const responseData = await response.json();
       setData({ ...data, data: responseData, loading: false, error: null });
