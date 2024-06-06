@@ -1,8 +1,8 @@
-# Hospital Finder App
+# Hospital Directory App
 
 ## Overview
 
-The Hospital Finder App is a web application that helps users locate hospitals using a public API. The application is built with React and TypeScript, powered by Vite for fast builds and optimized development. For styling, Tailwind CSS is used to ensure a modern and responsive design. Additionally, animations are added to the title for enhanced user experience.
+The Hospital Directory App is a web application that helps users locate hospitals using a public API. The application is built with React and TypeScript, powered by Vite for fast builds and optimized development. For styling, Tailwind CSS is used to ensure a modern and responsive design. Additionally, animations are added to the title for enhanced user experience.
 
 ## Tech Stack
 
@@ -11,6 +11,7 @@ The Hospital Finder App is a web application that helps users locate hospitals u
 - **Vite**: A fast build tool and development server.
 - **Tailwind CSS**: A utility-first CSS framework for styling.
 - **Public API**: Utilized for fetching hospital data.
+- **Context API**: For state management within the React application.
 
 ## Features
 
